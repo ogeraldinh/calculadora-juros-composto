@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Cálculo de Juros</title>
   </head>
   <body>
     <div class="corpo">
-      <div class="titulo">
-        <h1>Calcular Juros Composto</h1>
-      </div>
-      <p>Valor inicial (capital):</p>
-      <input type="text" id="valor_inicial" />
-      <p>Taxa de juros (ao mês):</p>
-      <input type="text" id="taxa_mes" />
-      <p>Tempo de rendimento (ao mês):</p>
-      <input type="text" id="rendimento_mes" />
+      <h1>Calcular Juros Composto</h1>
 
-      <p id="total"></p>
+      <div class="pergunta">
+        <p>Valor inicial (capital):</p>
+        <input type="text" id="valor_inicial">
+        
+        <p>Taxa de juros (ao mês):</p>
+        <input type="text" id="taxa_mes">
+        
+        <p>Tempo de rendimento (ao mês):</p>
+        <input type="text" id="rendimento_mes">
+      </div>
 
       <button onclick="calcular_juros()">Calcular</button>
+
+      <p id="total"></p>
     </div>
 
-    <script src="js/script.js"></script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
